@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ムハンマド・マンナンのプロフェッショナルプロフィール。スキル、プロジェクト、認定など。">
+    <meta name="keywords" content="プロフェッショナルプロフィール、ウェブデベロッパー、プロジェクト、認定、スキル、学位">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ムハンマド・マンナン - 個人ウェブサイト</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div><img class="logo" src="logo.png" alt="ロゴ"></div>
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+            <div class="language-switcher">
+                <a href="index.html">English</a>
+                <a href="index-ja.html">日本語</a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active-btn" id="home-btn" onclick="showSection('home')">ホーム</a></li>
+                <li><a id="skills-btn" onclick="showSection('skills')">スキル</a></li>
+                <li><a id="projects-btn" onclick="showSection('projects')">プロジェクト</a></li>
+                <li><a id="certifications-btn" onclick="showSection('certifications')">認定</a></li>
+                <li><a id="contact-btn" onclick="showSection('contact')">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="container">
+                <h1>こんにちは、ムハンマド・マンナンです</h1>
+                <p>ユーザーフレンドリーでレスポンシブなウェブサイトの作成を専門とするウェブデベロッパーです。</p>
+                <a onclick="showSection('contact')" class="btn">お問い合わせ</a>
+            </div>
+            <div class="feed-container">
+                <h2><strong>Social Media Feed</strong></h2>
+                <div class="facebook-container">
+                    <iframe class="fb" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FITU.punjab&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            <div class = "video-container">
+                <h2><strong>Project Showcase</strong></h2>
+                <div class="paint-app-container">
+                    <iframe class="video" src="https://drive.google.com/file/d/1WCpps_4oAkEJ8i0elIeDXEUs12vFtnCX/preview" allow="autoplay"></iframe>
+                    <h1>Using pyhton powerful ui library tkinter i build this paint app</h1>
+                </div>
+                <div class="shogi-container">
+                    <h1>Using consoles built in function in c++ i created my first ever game Shogi</h1>
+                    <iframe class="video" src="https://drive.google.com/file/d/17UEciGWbWDxKw-IEF-y4hSQwjf3gpwgt/preview" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </section>
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-cards">
+                <div class="card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Backend</h3>
+                    <p>Node.js, MongoDB</p>
+                </div>
+                <div class="card">
+                    <h3>Soft Skills</h3>
+                    <p>Problem Solving, Communication, Collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-cards">
+                <div class="card">
+                    <h3>Project Solitaire</h3>
+                    <p>Created a solitaire game using monogame in c#</p>
+                </div>
+                <div class="card">
+                    <h3>Project Paint</h3>
+                    <p>Created a clone to MS Paint using python libarary tkinter</p>
+                </div>
+                <div class="card">
+                    <h3>Project Shogi</h3>
+                    <p>Created my first ever graphical game on console using console functions in c++</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Winter Game Jam 2022 - Mindstorm Studio</li>
+                <li>Rookie Game Jam 2024 - Mindstorm Studio</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="form-layout">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; ムハンマド・マンナン 2024</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

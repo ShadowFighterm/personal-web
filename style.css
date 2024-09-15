@@ -328,6 +328,44 @@ footer {
     cursor: pointer;
 }
 
+/* RTL Support */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .navbar {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+    flex-direction: column-reverse;
+}
+
+[dir="rtl"] .nav-links li {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+[dir="rtl"] .feed-container, [dir="rtl"] .video-container, [dir="rtl"] .paint-app-container, [dir="rtl"] .shogi-container {
+    direction: rtl;
+}
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.language-switcher a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Additional RTL styles can be added as needed */
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
