@@ -134,10 +134,9 @@ h2 {
 .card {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(34, 59, 87);
     padding: 20px;
     text-align: center;
-    box-shadow: 4px 5px rgb(39, 38, 38);
 }
 
 .card h3 {
@@ -189,7 +188,7 @@ form .btn{
     border-radius: 20px;
     width: 40%;
     height: 75%;
-    box-shadow: 5px 5px rgb(44, 44, 44);
+    box-shadow: 0 8px 10px rgb(34, 59, 87);
     margin-top: 2%;
 }
 .form-layout h2{
@@ -245,7 +244,7 @@ footer {
 .video{
     border-radius: 25px;
     width: 50%;
-    height: 400px;
+    height: 450px;
 }
 .paint-app-container h1{
     width: 50%;
